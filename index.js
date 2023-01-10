@@ -14,7 +14,7 @@ try {
 
   app.use(bodyParser.json({ limit: '50mb' }));
   app.use(bodyParser.urlencoded({ extended: true }));
-  const whitelist = ['https://polite-trifle-216628.netlify.app', 'https://gemstar-engineering-services.netlify.app', 'https://nimble-blancmange-426fdb.netlify.app/', 'http://localhost:3000'];
+  const whitelist = ['https://nimble-blancmange-426fdb.netlify.app/', 'https://gemstar-engineering-services.netlify.app', 'https://nimble-blancmange-426fdb.netlify.app/', 'http://localhost:3000'];
   const corsOptions = {
     credentials: true, // This is important.
     origin: (origin, callback) => {
